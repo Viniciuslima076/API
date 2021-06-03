@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/imagens/Controlere.png">
+    <title>Cadastro</title>
+   
+</head>
+<body style="background-image: url(img/imagens/background.jpg);">
+    <div class="cadastro">
+        <div class="container">
+            <div class="box_cad">
+                    <img class="imgs" src="img/imagens/Gamer.png">
+                <h1>Faça aqui seu cadastro!</h1>
+                <form id="form_cadastro" method="post" onsubmit="return cadastrar()">
+        
+                    <span class="text_cadastro">Nome completo</span> <br>
+                    <input type="text" name="nome" class="C_input" autofocus="autofocus" placeholder="Nome e sobrenome" required minlength="4">
+                    <br>
+                    <span class="text_cadastro">Login</span><br>
+                    <input type="text" name="login" class="C_input" placeholder="seu nome de usuário" required minlength="4">
+                    <br>
+                    <span class="text_cadastro">Senha</span><br>
+                    <input type="password" name="senha" class="C_input" placeholder="***************" required minlength="4">
+                     <br>
+                    <input type="submit" id="btn_entrar" value="Cadastrar" class="bt-cadastro">
+                </form>
+                <h6>Já tem conta? <a href="Login.html">Entre já</a></h6>
+            </div>
+        </div>
+    </div>
+    </div>
+
+                <img src="aguarde-orange.gif" id="img_aguarde" style="display: none; width:100px">
+
+    <div id="div_erro" style="background-color: sandybrown; color: maroon; display: none;">
+        Erro no cadastro
+    </div>
+</body>
+</html>
+
+<script>
+
+    function cadastrar() {
+        aguardar();
+        var formulario = new URLSearchParams(new FormData(form_cadastro));
+        fetch("/usuarios/cadastrar", {
+            method: "POST",
+            body: formulario
+        }).then(function (response) {
+            
+            if (response.ok) {
+
+                window.location.href='login.html';
+
+            } else {
+
+                console.log('Erro de cadastro!');
+                response.text().then(function (resposta) {
+                    div_erro.innerHTML = resposta;
+                });
+                finalizar_aguardar();
+            }
+        });
+
+        return false;
+    }
+
+    function aguardar() {
+        btn_entrar.disabled = true;
+        img_aguarde.style.display='block';
+        div_erro.style.display='none';
+    }
+
+    function finalizar_aguardar() {
+        btn_entrar.disabled = false;
+        img_aguarde.style.display='none';
+        div_erro.style.display='block';
+    }
+
+</script>

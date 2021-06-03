@@ -1,0 +1,671 @@
+/* BARRA DE ROLAGEM */
+body {
+   font-family: 'Rajdhani', sans-serif;;
+}
+
+body::-webkit-scrollbar {
+    width: 12px; 
+}
+
+body::-webkit-scrollbar-track {
+    background: rgb(79,79,79,0.25);
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: #363636;
+    border-radius: 20px;       
+}
+
+/* FIM BARRA DE ROLAGEM */
+
+/* LOGIN */
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.box_login {
+    background-color: white;
+    width: 520px;
+    height: 470px;
+    margin-left: 31%;
+    margin-top: 100px;
+    border-radius: 10px;
+}
+
+.logo img {
+    background-repeat: no-repeat;
+    width: 90px;
+    height: 80px;
+    padding-left: 150px;
+    padding-top: 20px;
+}
+
+.login {
+    padding-top: 30px;
+    padding-left: 50px;
+}
+
+.login span {
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 115px;
+    margin-top: 5px;
+}
+
+.login input {
+    outline: none;
+    background: none;
+    border-radius: 5px;
+    border-width: 1px;
+    width: 300px;
+    height: 35px;
+    border-color: #3e2a89;
+}
+
+.login button {
+    width: 200px;
+    height: 28px;
+    border: 0;
+    border-radius: 15px;
+    background-color: #3e2a89;
+    margin-top: 30px;
+    margin-left: 50px;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+}
+
+.login h6 {
+    font-size: 15px;
+    padding-left: 45px;
+    padding-top: 80px;
+    margin: 0;
+}
+
+.extra
+
+/*Cadastro*/
+
+.box_cadastro {
+    width: 520px;
+    height: 470px;
+    margin-left: 415px;
+    margin-top: 100px;
+    border-radius: 10px
+}
+
+.C_input {
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 10px 25px;
+    margin-left: 25px;
+    width: 50%;
+    border-radius: 5px;
+    border: solid 1px #bbbbbb;
+}
+
+.box_cad {
+    width: 100%;
+    height: 375px;
+    margin-top: 200px;
+    background-color:#d8e2dc;
+    border-radius: 20px;
+}
+
+.box_cad h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    padding-left:15px;
+    padding-top:20px;
+}
+
+.text_cadastro {
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 25px;
+}
+
+.imgs {
+    margin-top: 50px;
+    padding-right: 125px;
+    display: flex;
+    float: right;
+    width: 260px;
+}
+
+.options {
+    font-size: 12px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.options select{
+    width: 136px;
+    height: 36px;
+    border-radius: 4px;
+}
+
+.bt-cadastro {
+    width: 200px;
+    height: 28px;
+    border: 0;
+    border-radius: 15px;
+    background-color: #3e2a89;
+    margin-top: 10px;
+    margin-left: 25px;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+}
+
+.cadastro h6 {
+    padding-left: 222px;
+    font-size: 16px;
+    margin: 0;
+    padding-top: 26px;
+}
+
+/* HOME */
+
+/* LOGO E NAVBAR */
+
+.banner {
+    position:absolute;
+	top:0;
+	left:0;
+	background-color: #140f33;
+	width:100%;
+	height:85%;
+    box-shadow: 3px 1px 10px 10px #4A37BF ; 
+}
+
+.logo01 img {
+    width: 570px;
+    height: 395px;
+    padding-left: 245px;
+    padding-top: 40px;
+}
+
+.navbar {
+    float: top;
+    list-style: none;
+    padding-top: 60px;
+    padding-left: 20px;
+}
+
+.navbar li {
+    float: left;
+    margin-left: 80px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    color: #1791d0;
+    font-size: 20px;
+}
+
+.navbar a {
+    color: #1791d0;
+    text-decoration: none;
+}
+
+/* FIM LOGO E NAVBAR */
+
+/* INTRODUÇÂO */
+
+.caixa {
+    width: 1354px;
+    height: 2420px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin-top: 558px;
+    background-color: #d8e2dc;
+}
+
+.cabeçalho {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+/* FIM INTRODUÇÂO */
+
+/* IMGS VIDEOS GAMES */
+
+.img_magnavox {
+    width: 450px;
+    padding-left: 115px;
+    margin-top: 30px;
+    float: left;
+    cursor: pointer;
+    transition: width 2s, height 1s;
+}
+
+.img_magnavox:hover {
+    width: 500px;
+    transition: width 2s, height 1s;
+}
+
+.img_pong {
+    width: 390px;
+    padding-left: 170px;
+    margin-top: 10px;
+    float: left;
+    cursor: pointer;
+    transition: width 2s, height 1s;
+}
+
+.img_pong:hover {
+    width: 440px;
+    transition: width 2s, height 1s;
+}
+
+.img_telstar {
+    width: 390px;
+    padding-left: 105px;
+    margin-top: 05px;
+    float: left;
+    cursor: pointer;
+    transition: width 2s, height 1s;
+}
+
+.img_telstar:hover {
+    width: 440px;
+    transition: width 2s, height 1s;
+}
+
+.img_atari {
+    width: 650px;
+    float: left;
+    cursor: pointer;
+    transition: width 2s, height 1s;
+}
+
+.img_atari:hover {
+    width: 700px;
+    transition: width 2s, height 1s;
+}
+
+.img_col {
+    width: 350px;
+    padding-left: 105px;
+    margin-top: 55px;
+    float: left;
+    cursor: pointer;
+    transition: width 2s, height 1s;
+}
+
+.img_col:hover {
+    width: 400px;
+    transition: width 2s, height 1s;
+}
+
+
+/* FIM IMGS VIDEO GAMES */
+
+/* DIVS POSICIONAMENTO VIDEO GAMES */
+
+.magnavox {
+    width: 1350px;
+    height: 300px;
+}
+
+.pong {
+    width: 1354px;
+    height: 380px;
+    padding-top: 80px;
+    background-color: #140f33;
+    margin-top: 50px;
+    box-shadow: 3px 1px 6px 5px #4F4F4F;
+}
+
+.Telstar {
+    width: 1350px;
+    height: 300px;
+    margin-top: 75px;
+}
+
+.Atari {
+    width: 1354px;
+    height: 380px;
+    padding-top: 80px;
+    background-color: #140f33;
+    margin-top: 50px;
+    box-shadow: 3px 1px 6px 5px #4F4F4F;
+}
+
+.Colecovision {
+    width: 1350px;
+    height: 300px;
+    margin-top: 75px;
+}
+
+/* FIM DIVS POSICIONAMENTO VIDEO GAMES */
+
+/* DIVISORIA */
+
+.hr {    
+    margin-left: 650px;
+}
+
+.hr hr {
+    width: 1px;
+    height: 290px;
+    border: 0;
+    background-color: grey;
+    float: left;
+}
+
+/* FIM DIVISORIA */
+
+/* HISTORIAS */
+
+.history_mag {
+    width: 698px;
+    float: right;
+}
+
+.history_mag h6 {
+    font-size: 17px;
+    font-family: 'Rajdhani', sans-serif;
+    text-align: center;
+}
+
+.history_pong {
+    width: 650px;
+    float: left;
+    margin-top: 15px;
+}
+
+.history_pong h6 {
+    font-size: 19px;
+    font-family: 'Rajdhani', sans-serif;
+    text-align: center;
+    color: #DAE3CD;
+}
+
+.history_tel {
+    width: 650px;
+    float: left;
+    margin-top: 15px;
+}
+
+.history_tel h6 {
+    font-size: 21px;
+    font-family: 'Rajdhani', sans-serif;
+    text-align: center;
+}
+
+.history_atari {
+    width: 650px;
+    float: left;
+    margin-top: 15px;
+}
+
+.history_atari h6 {
+    font-size: 19px;
+    font-family: 'Rajdhani', sans-serif;
+    text-align: center;
+    color: #DAE3CD;
+}
+
+.history_col {
+    width: 650px;
+    float: left;
+    margin-top: 15px;
+}
+
+.history_col h6 {
+    font-size: 21px;
+    font-family: 'Rajdhani', sans-serif;
+    text-align: center;
+}
+
+.titulo h6 {
+    font-size: 30px;
+    margin: 0;
+}
+
+.video_informativo_ld {
+    width: 550px;
+    height: 265px;
+    padding-left: 80px;
+    display: none;
+}
+
+.video_informativo_le {
+    width: 550px;
+    height: 265px;
+    padding-left: 55px;
+    display: none;
+}
+
+.rodape {
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+/* FIM HISTORIAS */
+
+/* FOOTER */
+
+.footer {
+    width: 1354px;
+    height: 60px;
+    margin-top: 55px;
+    background-color: #140f33;
+    box-shadow: 3px 1px 6px 5px #4F4F4F;
+}
+
+.titulo_footer {
+    font-size: 33px;
+    text-align: center; 
+    padding-top: 10px;  
+    font-family: 'Rajdhani', sans-serif; 
+    color: #1791d0;
+}
+
+.titulo_footer h6 {
+    margin: 0;
+}
+
+/* FIM FOOTER */
+
+/* INICIO DADOS */
+
+.box_color {
+    width: 1354px;
+    height: 250px;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background-color: #140f33;
+    color: white;
+    font-size: 31px;
+    text-align: center;
+}
+
+.navbar_dados {
+    float: bottom;
+    list-style: none;
+    padding-left: 20px;
+}
+
+.navbar_dados li {
+    float: left;
+    margin-left: 80px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    color: #1791d0;
+    font-size: 20px;
+}
+
+.navbar_dados a {
+    color: #1791d0;
+    text-decoration: none;
+}
+
+.h6 h6 {
+    margin: 0;
+    padding-top: 55px;
+} 
+
+.background_page {
+    width: 1354px;
+    height: 1000px;
+    margin-top: 46px;
+    background-color: #d8e2dc ;
+}
+
+.meu-grafico {
+    width: 60%;
+    margin: auto;   
+}
+
+/* FIM GRAFICO */
+
+/* CALCULADORA */
+
+.calculadora {
+    width: 90%;
+    height: 385px;
+    margin-top: 30px;
+    margin-left: 70px;
+    background-color: #F0F8FF;
+    border-radius: 10px;
+    box-shadow: 3px 2px 6px 4px #4f4f4f;
+}
+
+.calculadora h6 {
+    color: black;
+    margin: 0;
+    text-align: center;
+    font-size: 19px;
+}
+
+.potencia {
+    width: 177px;
+    height: 30px;
+    margin-left: 53px;
+    border-radius: 6px;
+    background: aliceblue;
+}
+
+.horas {
+    width: 70px;
+    height: 35px;
+    margin-left: 6px;
+    border-radius: 6px;
+    background: aliceblue;
+}
+
+.minutos {
+    width: 70px;
+    height: 35px;
+    margin-left: 4px;
+    border-radius: 6px;
+    background: aliceblue;
+}
+
+.dias {
+    width: 100px;
+    height: 30px;
+    float: left;
+    margin-left: 63px;
+    border-radius: 6px;
+    background: aliceblue;
+}
+
+.preco_KWH {
+    width: 100px;
+    height: 30px;
+    float: left;
+    margin-left: 34px;
+    border-radius: 6px;
+    background: aliceblue;
+}
+
+.inputs_calculadora {
+    width: 500px;
+    margin-right: 800px;
+}
+
+
+.inputs {
+    float: left;
+}
+
+.inputs li {
+    float: left;
+    margin-left: 25px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    color: black;
+    font-size: 20px;
+    list-style-type: none;    
+}
+
+.inputs_dias li {
+    float: left;
+    margin-left: 25px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    color: black;
+    font-size: 20px;
+    list-style-type: none;    
+}
+
+.inputs_preco li {
+    float: left;
+    margin-left: 60px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    color: black;
+    font-size: 20px;
+    list-style-type: none;    
+}
+
+.resultado {
+    
+    color: black;
+}
+
+/* Jogos  */
+
+.banner_jogos {
+    position:absolute;
+	top:0;
+	left:0;
+	background-color: #140f33;
+	width:100%;
+	height:9%;
+    box-shadow: 3px 1px 10px 10px #4A37BF ; 
+}
+
+.navbar_jogos {
+    float: top;
+    list-style: none;
+    padding-left: 20px;
+}
+
+.navbar_jogos li {
+    float: left;
+    margin-left: 80px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    color: #1791d0;
+    font-size: 20px;
+}
+
+.navbar_jogos a {
+    color: #1791d0;
+    text-decoration: none;
+}
+
+.caixa_jogos {
+    width: 1354px;
+    height: 2420px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin-top: 58px;
+    background-color: #d8e2dc;
+} 
+
+.caixa_jogos button {
+    width: 165px;
+    height: 40px;
+    margin-left: 35px;
+    border-radius: 10px;
+}

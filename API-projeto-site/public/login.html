@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/imagens/Controlere.png">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/48b24e7021.js" crossorigin="anonymous"></script>
+    <title>Login</title>
+</head>
+
+<body style="background-image: url(img/imagens/background.jpg);">
+
+    <div class="box_login">
+        <div class="container">
+            <div class="logo">
+                <img class="logo" src="img/imagens/Controlere.png">
+            </div>
+            <div class="login">
+                <form id="form_login" method="post" onsubmit="return entrar()">
+                    
+                    <span >Usuário</span><br>
+                    <input type="text" name="login">
+                    <br><br>
+                    <span>Senha </span><br>
+                    <input type="password" name="senha">
+                    <br><br>
+                    <button id="btn_entrar">Entrar</button>
+                </form>
+
+                <div class="extra">
+                    <div id="div_erro" class="msg_erro">
+                    </div>
+
+                    <img style="display: none;" src="aguarde-orange.gif" id="img_aguarde">
+                </div><br>
+
+                <h6>Não tem conta? <a href="Cadastro.html">Cadastre-se já</a></h6>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+
+    function entrar() {
+        aguardar();
+        var formulario = new URLSearchParams(new FormData(form_login));
+        fetch("/usuarios/autenticar", {
+            method: "POST",
+            body: formulario
+        }).then(resposta => {
+
+            if (resposta.ok) {
+
+                resposta.json().then(json => {
+
+                    sessionStorage.login_usuario_meuapp = json.login;
+                    sessionStorage.nome_usuario_meuapp = json.nome;
+                    sessionStorage.id_usuario_meuapp = json.id;
+
+                    window.location.href = 'index.html';
+                });
+
+            } else {
+
+                console.log('Erro de login!');
+
+                resposta.text().then(texto => {
+                    console.error(texto);
+                    finalizar_aguardar(texto);
+                });
+            }
+        });
+
+        return false;
+    }
+
+    function aguardar() {
+        btn_entrar.disabled = true;
+        img_aguarde.style.visibility = 'visible';
+        div_erro.style.visibility = 'hidden';
+    }
+
+    function finalizar_aguardar(resposta) {
+        btn_entrar.disabled = false;
+        img_aguarde.style.visibility = 'hidden';
+        div_erro.style.visibility = 'visible';
+        div_erro.innerHTML = resposta;
+    }
+
+</script>

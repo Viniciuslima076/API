@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../CHAMBER`S/imagens/Controlere.png">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=M+PLUS+Rounded+1c:wght@700&family=Open+Sans:wght@300&display=swap"
+          rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/48b24e7021.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="funcoes.js"></script>
+    <link rel="shortcut icon" href="img/imagens/Controlere.png">
+    <title>Home</title>
+</head>
+
+<body>
+
+
+    <div class="banner">
+        <div class="container">
+            <div class="logo01">
+                <img src="img/Logos/Logo Completa/RALTA.png" alt="">
+                <ul class="navbar">
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">FEED</a></li>
+                    <li><a href="dados.html">DADOS</a></li>
+                    <li><a href="jogos.html">JOGOS</a></li>
+                    <li><a href="">COMPRAS</a></li>
+                    <li><a href="">CONTATO</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section_games">
+        <div class="container">
+            <div class="caixa">
+                <div class="cabeçalho">
+                    <h5>INICIO DE UM SONHO</h5>
+                    <h6>Você conhece a historia dos games? Não? Não se preocupe nós da CHAMBER´S vamos te contar, então
+                        vem com a gente conferir</h6>
+
+                </div>
+                <!-- VIDEO GAME MAGNAVOX -->
+                <div class="magnavox">
+                    <img class="img_magnavox" onclick="magnavox()" src="img/imagens/magnavox.png" alt="MAGNAVOX">
+                    
+                    <div class="hr">
+                        <hr>
+                    </div>
+
+                    <div class="history_mag">
+                        <div class="titulo">
+                            <h6>Magnavox Odyssey</h6>
+                        </div>
+                        <video id="video_mag" class="video_informativo_ld" controls src="img/Videos/Magnavox.mp4"></video>
+                        <h6 id="display_mag" style="display: block;">O Magnavox Odyssey foi simplesmente o primeiro videogame do mundo! <br> Seu lançamento foi
+                            no
+                            ano de
+                            1972, ou seja, <br> há bastante tempo, não é mesmo? <br> Embora ele tenha sido o primeiro
+                            console do
+                            mercado de games, seu sucesso é algo incontestável <br> e, um dos principais motivos era a
+                            possibilidade dele ser integrado ao aparelho de televisão. <br><br>
+
+                            Logicamente, por conta da época, suas limitações eram evidentes. <br> Afinal, ele não era
+                            capaz
+                            de
+                            reproduzir sons e somente era compatível com alguns tamanho de TV. <br> Além disso, a
+                            biblioteca
+                            de
+                            jogos era outra questão, visto que somente 27 títulos foram lançados no período.</h6>
+                    </div>
+                </div>
+                <!-- FIM VIDEO GAME MAGNAVOX -->
+
+                <!-- VIDEO GAME HOME PONG -->
+                
+                <div class="pong">
+                    <div class="history_pong">
+                        <div class="titulo">
+                            <h6>Home Pong</h6>
+                        </div>
+                        <video id="video_pong" class="video_informativo_le" controls src="img/Videos/Pong.mp4"></video>
+                        <h6 id="display_pong" style="display: block;">Três anos após o lançamento do Odyssey, a Atari lançou no mercado Pong,<br> um console que
+                            trazia em sua memória o jogo de arcade. <br> O console era constituído de dois botões que
+                            controlavam as barras durante as partidas. <br> O console ajudou a popularizar o nome da
+                            Atari no mundo dos games, <br> apesar de ser o estopim de um processo movido pelos criadores
+                            do Odyssey, <br> já que a empresa utilizou o game e a tecnologia sem a autorização da
+                            Magnavox.</h6>
+                    </div>
+                    <div class="hr">
+                        <hr>
+                    </div>
+                    <img class="img_pong" onclick="Pong()" src="img/imagens/Pong.png" alt="PONG">                 
+                </div>
+
+                <!-- FIM VIDEO GAME HOME PONG -->
+
+                <!-- VIDEO GAME TELSTAR -->
+
+                <div class="Telstar">
+                    <img class="img_telstar" onclick="Telstar()" src="img/imagens/Telstar.png" alt="Telstar">                    
+                    <div class="hr">
+                        <hr>
+                    </div>
+
+                    <div class="history_tel">
+                        <div class="titulo">
+                            <h6>Telstar</h6>
+                            <video id="video_tel" class="video_informativo_ld" controls src="img/Videos/Telstar.mp4"></video>
+                        </div>
+                        <h6 id="display_tel" style="display: block;" >Aproveitando a popularidade de jogos como Pong, <br> a Coleco lançou uma linha de consoles
+                            que
+                            durou dois anos, <br> mas que rendeu à empresa 14 videogames diferentes. <br> Chamada de
+                            “Linha
+                            Telstar”, cada console vinha com um design distinto e jogos próprios, <br> devido a falta de
+                            capacidade de rodar vários games.</h6>
+                    </div>
+                </div>
+
+                <!-- FIM VIDEO GAME TELSTAR -->
+                
+                <!-- VIDEO GAME ATARI  -->
+
+                <div class="Atari">
+                    <div class="history_atari">
+                        <div class="titulo">
+                            <h6>Atari 2600</h6>
+                            <video id="video_atari" class="video_informativo_le" controls src="img/Videos/atari.mp4"></video>
+                        </div>
+                        <h6 id="display_atari" style="display: block;">O Atari 2600, lançado em 77, revolucionou o mundo dos games <br> pelo simples fato de
+                            introduzir cartuchos com diferentes jogos ao seu console. <br> Agora, os jogadores não
+                            estavam presos aos mesmos games embutidos na memória dos videogames, criando uma indústria
+                            de produtoras e venda de cartuchos com o seu lançamento. <br> O Atari 2600 é considerado por
+                            muitos como o grande responsável pela quebra da indústria de videogames nos anos 80. <br> A
+                            indústria se recuperou apenas no final da década, com o lançamento do NES.</h6>
+                    </div>
+                    <div class="hr">
+                        <hr>
+                    </div>
+                    <img class="img_atari" onclick="Atari()" src="img/imagens/Atari.png" alt="Atari">
+                </div>
+
+                <!-- FIM VIDEO GAME ATARI -->
+
+                <!-- VIDEO GAME COLECOVISION -->
+
+                <div class="Colecovision">
+                    <img class="img_col" onclick="Colecovision()" src="img/imagens/Colecovision.png" alt="Colecovision">
+                    <div class="hr">
+                        <hr>
+                    </div>
+
+                    <div class="history_col">
+                        <div class="titulo">
+                            <h6>Colecovision</h6>
+                            <video id="video_col" class="video_informativo_ld" controls src="img/Videos/Colecovision.mp4"></video>
+                        </div>
+                        <h6 id="display_col" style="display: block;">Após alguns anos de hegemonia do Atari 2600, a Coleco resolveu encarar o mercado de games
+                            mais uma vez com o Colecovision. Lançado com aproximadamente 12 jogos, o console tinha como
+                            vantagem a capacidade de reproduzir quase que totalmente a experiência gráfica dos arcades
+                            no conforto da sua sala de estar.</h6>
+                    </div>
+                </div>
+
+                <div class="rodape">
+                <h6>Eai gostou de ver os primeiros videogames que surgiram? <br> Conta ai, você assim como nós da Chamber´s curte um game? <br> Esperamos que tenha gostado, aproveita e <a href="Cadastro.html">Cadastre-se já</a> para fica por dentro de tudo que acontece no mundo dos games, prometo, não vamos te decepcionar.</h6></div>
+                
+                <!-- FIM VIDEO GAME COLECOVISON -->
+
+                <!-- FOOTER -->
+
+                <div class="footer">
+                    <div class="titulo_footer">
+                        <h6>Feito por um <a href="https://github.com/Viniciuslima076">aluno Bandtec</a></h6>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+</body>
+
+</html>
+<script> 
+    let usuario;
+
+    verificar_autenticacao();
+
+    // APARECER E DESAPARECER VIDEO
+
+    function magnavox() {
+        if (display_mag.style.display == 'block') {
+            display_mag.style.display = 'none';   
+        video_mag.style.display = 'block'; 
+        }
+         else {
+            display_mag.style.display = 'block'; 
+            video_mag.style.display = 'none'  
+                    
+        }
+           
+    }
+
+    function Pong() {
+        if (display_pong.style.display == 'block') {
+            display_pong.style.display = 'none';
+            video_pong.style.display = 'block'; 
+        }  
+        else {
+            display_pong.style.display = 'block';
+            video_pong.style.display = 'none';
+        }      
+    }
+
+    function Telstar() {
+        if (display_tel.style.display == 'block') {
+            display_tel.style.display = 'none';
+            video_tel.style.display = 'block'; 
+        }  
+        else {
+            display_tel.style.display = 'block';
+            video_tel.style.display = 'none';
+        }   
+    }
+
+    function Atari() {
+        if (display_atari.style.display == 'block') {
+            display_atari.style.display = 'none';
+            video_atari.style.display = 'block'; 
+        }  
+        else {
+            display_atari.style.display = 'block';
+            video_atari.style.display = 'none';
+        }           
+    }
+
+    function Colecovision() {
+        if (display_col.style.display == 'block') {
+            display_col.style.display = 'none';
+            video_col.style.display = 'block'; 
+        }  
+        else {
+            display_col.style.display = 'block';
+            video_col.style.display = 'none';
+        }   
+    }
+</script>
